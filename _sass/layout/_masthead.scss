@@ -8,6 +8,9 @@
   height: fit-content;
   top: 0;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
   -webkit-animation: intro 0.3s both;
           animation: intro 0.3s both;
@@ -48,6 +51,7 @@
 
   ul {
     margin: 0;
+    margin-left: auto;
     padding: 0;
     clear: both;
     list-style-type: none;
