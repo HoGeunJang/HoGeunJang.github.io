@@ -87,6 +87,15 @@ publication_category:
   conferences:
     title: 'Presentations'
 
+# Teaching Category - The following the list of teaching categories and their headings
+teaching_category:
+  undergraduate:
+    title: 'Undergraduate'    
+  graduate:
+    title: 'Graduate'
+  workshop:
+    title: 'Workshop'
+
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
@@ -244,6 +253,8 @@ defaults:
       comments: false
       share: true
       related: false
+      toc: true
+      toc_sticky: true
   # _pages
   - scope:
       path: ""
@@ -251,6 +262,8 @@ defaults:
     values:
       layout: single
       author_profile: true
+      toc: true
+      toc_sticky: true
   # _teaching
   - scope:
       path: ""
@@ -260,6 +273,8 @@ defaults:
       author_profile: true
       share: false
       comments: false
+      toc: true
+      toc_sticky: true
   # _publications
   - scope:
       path: ""
@@ -269,6 +284,8 @@ defaults:
       author_profile: true
       share: true
       comments: false
+      toc: true
+      toc_sticky: true
   # _portfolio
   - scope:
       path: ""
