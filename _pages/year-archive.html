@@ -7,7 +7,6 @@ redirect_from:
   - /wordpress/blog-posts/
 ---
 
-{% include toc %}
 <!-- 연도별 TOC 생성 -->
 {% assign postsByYear = site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
 {% for year in postsByYear %}
