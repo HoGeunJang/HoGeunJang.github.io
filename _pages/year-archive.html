@@ -8,6 +8,16 @@ redirect_from:
 ---
 
 <!-- {% include toc %} -->
+<!-- 연도별 TOC 생성 -->
+{% assign years = site.posts | map: "date" | map: "year" | uniq | sort | reverse %}
+<nav class="year-toc">
+  <strong>Years:</strong>
+  <ul>
+    {% for year in years %}
+      <li><a href="#{{ year }}">{{ year }}</a></li>
+    {% endfor %}
+  </ul>
+</nav>
 
 {% include base_path %}
 {% capture written_year %}'None'{% endcapture %}
